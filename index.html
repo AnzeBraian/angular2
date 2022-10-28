@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+</head>
+<body>
+    <h1>TypeScript - ES20XX </h1>
+    <h2>Explicacion de cada archivo del proyecto </h2>
+    <p> tslint.json = cuando veamos un archivo.json signifa que es un archivo de configuración, lo que es un linter o un lint es un conjunto de reglas que nos obligan a programar de cierta manera.
+        
+    tsconsfig.json = este el archivo de configuración de TypeScript, es decir que este archivo nos dice como quiere que se traduzca a js o como quieren que funcione TypeScript en el proyecto.
+
+    tsconsfig.spec.json le añade caracteristicas adicionales a tsconsfig.json. El spec esta relacionado a la parte de las pruebas, basicamente las pruebas son pruebas unitarias o de integración que se hacen para asegurar de que el codigo funcione de la manera que esperamos.
+
+    tsconsfig.app.json = esta enfocado a nuestra aplicación y es muy raro que hagamos alguna modificación.
+
+    readme.md = es un tipo de codigo que habla de como se creo la aplicación, no es muy importante 
+
+    package.json = es un archivo delicado y no debemos hacer modificaciones manualmente en este archivo, si queremos añadir o eliminar cosas, usualmente lo vamos a hacer mediante comandos.
+
+    package-lock.json = tampoco lo vamos a modificar manualmente y es basicamente un archivo que nos dice como se construyo los modulos de node y todo lo demas 
+
+    karmaconfig.js = son las configuraciones para las pruebas unitarias y enteras basadas en karma 
+
+    angular.json = es un archivo con configuracines importantes para nuestra aplicación entre ellas vamos a notar cosas como  los assets o styles 
+
+    gitignore = son archivos que yo no quiero que git le de seguimiento de mi proyecto 
+
+    .editorconfig = son reglas ya vienen para los archivos de TypeScript y demas 
+
+    .browserlist = tampoco es  muy importante, es para la conpatibilidad con los navegadores 
+
+    node_modules = es una carpeta que tiene una gran cantidad de modulos y hay muchas cosas que van a la aplicación de produccion y otras que no, aqui hay paquetes que ayudan a la traduccion de typescript a js o paquetes nos informan de errores, ayuda que en el html podamos ver los errores o que veamos en la consola deonde estan los errores 
+
+    <h2>Explicación de los archivos dentro del SRC </h2>
+
+    dentro de la carpeta app vamos a ver el app.component.html donde vamos a encontrar el estilo y el html que es lo que construye a la página.
+    En el src vamos s ver muchos app.component de distintos programas y es que estos estan haciendo referencia a un mismo componente 
+
+    .css este se va a dedicar a los estilos que se van a dedicar al html o componente, lo bueno de angular es que nos permite hacer css encapsulado porque si debemos crear algo que solo se debe aplicar en el html, lo podemos hacer en este archivo 
+
+    .spect.ts = esta relacionado a pruebas, aqui ya se pone mucho código por defecto y no lo vamos a tocar y los podriamos borrar sin ningun problema 
+
+    .ts = esto es una clase de typescript 
+
+    app.module.ts = es otra clase comun y corriente pero tiene un decorador especial el app component podria mentalizarse que es su aplicacion en general y aqui estan los modulos que componen la misma  
+
+    assets = los assets son usados generalmente para poner recursos estaticos de nuestra aplicacion comunmente son imagenes, sonidos o cosas que realmente no deban compilarse o traducirse a javascript 
+
+    luego tenemos los enviroments 
+
+    son archivos bastante utiles porque angular de manera automatica nos permite a nosotros tener un lugar para nuestras variables de entorno ya sea de desarrollo o de producción 
+
+    favicon son solo los iconos 
+
+
+    
+
+
+
+    </p>
+    <hr>
+
+    
+    
+    <script src="bundle.js"></script>
+</body>
+</html>
